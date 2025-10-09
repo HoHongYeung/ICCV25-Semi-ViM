@@ -53,7 +53,7 @@ This hybrid fusion enhances generalization and reduces pseudo-label bias.
 
 ---
 
-## 🌗 Dual-Mode Visualization (Light / Dark)
+## 🌗 Dual-Mode Visualization
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="Semi-ViM.jpg">
