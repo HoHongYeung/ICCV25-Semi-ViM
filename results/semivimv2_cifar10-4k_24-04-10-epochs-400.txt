@@ -1,0 +1,82 @@
+Namespace(arch='cnn13', data_idxs=False, data_root='./data-local', data_twice=False, dataset='wscifar10', drop_ratio=0.0, ema_decay=0.97, ent_weight=None, epochs=400, gamma=None, label_exclude=False, lr=0.1, lr_scheduler='cos', min_lr=0.0001, mixup_alpha=None, model='semivim', momentum=0.9, nesterov=True, num_labels=4000, optim='sgd', print_freq=20, rampdown_length=50, rampup_length=80, save_dir='./checkpoints', save_freq=0, soft=None, steps=None, sup_batch_size=100, t1=None, t2=None, threshold=0.95, usp_batch_size=100, usp_weight=1.0, weight_decay=0.0005, weight_rampup=30, workers=4)
+pytorch version : 1.10.0
+Files already downloaded and verified
+Files already downloaded and verified
+Semi-ViM
+------ Training epochs: 0 ------
+[train][20 ] lloss: 2.18000	uloss: 0.64000	lyap: 0.00000	gnorm: 0.92000	alpha: 0.99850	vnorm: 0.00046	lacc: 56.000%	uacc: 41.000%
+[train][40 ] lloss: 2.05111	uloss: 0.59889	lyap: 0.00000	gnorm: 0.87778	alpha: 0.99789	vnorm: 0.00050	lacc: 58.000%	uacc: 43.111%
+[train][60 ] lloss: 1.92222	uloss: 0.55778	lyap: 0.00000	gnorm: 0.83556	alpha: 0.99728	vnorm: 0.00053	lacc: 60.000%	uacc: 45.222%
+[train][80 ] lloss: 1.79333	uloss: 0.51667	lyap: 0.00000	gnorm: 0.79333	alpha: 0.99667	vnorm: 0.00057	lacc: 62.000%	uacc: 47.333%
+[train][100] lloss: 1.66444	uloss: 0.47556	lyap: 0.00000	gnorm: 0.75111	alpha: 0.99606	vnorm: 0.00060	lacc: 64.000%	uacc: 49.444%
+[train][120] lloss: 1.53556	uloss: 0.43444	lyap: 0.00000	gnorm: 0.70889	alpha: 0.99544	vnorm: 0.00064	lacc: 66.000%	uacc: 51.556%
+[train][140] lloss: 1.40667	uloss: 0.39333	lyap: 0.00000	gnorm: 0.66667	alpha: 0.99483	vnorm: 0.00067	lacc: 68.000%	uacc: 53.667%
+[train][160] lloss: 1.27778	uloss: 0.35222	lyap: 0.00000	gnorm: 0.62444	alpha: 0.99422	vnorm: 0.00071	lacc: 70.000%	uacc: 55.778%
+[train][180] lloss: 1.14889	uloss: 0.31111	lyap: 0.00000	gnorm: 0.58222	alpha: 0.99361	vnorm: 0.00074	lacc: 72.000%	uacc: 57.889%
+[train][200] lloss: 1.02000	uloss: 0.27000	lyap: 0.00000	gnorm: 0.54000	alpha: 0.99300	vnorm: 0.00078	lacc: 74.000%	uacc: 60.000%
+>>>[train] lloss: 16.00000	uloss: 4.55000	lyap: 0.00000	gnorm: 7.30000	alpha: 9.95750	vnorm: 0.00620	lacc: 65.000%	uacc: 50.500%
+------ Testing epochs: 0 ------
+[test][0  ] lacc: 64.000%	l2acc: 67.000%
+[test][20 ] lacc: 65.750%	l2acc: 68.750%
+[test][40 ] lacc: 67.500%	l2acc: 70.500%
+[test][60 ] lacc: 69.250%	l2acc: 72.250%
+[test][80 ] lacc: 71.000%	l2acc: 74.000%
+>>>[test] lacc: 67.500%	l2acc: 70.500%
+------ Training epochs: 1 ------
+[train][20 ] lloss: 1.38000	uloss: 0.44000	lyap: 0.00000	gnorm: 0.81000	alpha: 0.99700	vnorm: 0.00049	lacc: 63.000%	uacc: 48.000%
+[train][40 ] lloss: 1.32000	uloss: 0.41222	lyap: 0.00000	gnorm: 0.77222	alpha: 0.99644	vnorm: 0.00053	lacc: 64.889%	uacc: 50.000%
+[train][60 ] lloss: 1.26000	uloss: 0.38444	lyap: 0.00000	gnorm: 0.73444	alpha: 0.99589	vnorm: 0.00056	lacc: 66.778%	uacc: 52.000%
+[train][80 ] lloss: 1.20000	uloss: 0.35667	lyap: 0.00000	gnorm: 0.69667	alpha: 0.99533	vnorm: 0.00060	lacc: 68.667%	uacc: 54.000%
+[train][100] lloss: 1.14000	uloss: 0.32889	lyap: 0.00000	gnorm: 0.65889	alpha: 0.99478	vnorm: 0.00064	lacc: 70.556%	uacc: 56.000%
+[train][120] lloss: 1.08000	uloss: 0.30111	lyap: 0.00000	gnorm: 0.62111	alpha: 0.99422	vnorm: 0.00067	lacc: 72.444%	uacc: 58.000%
+[train][140] lloss: 1.02000	uloss: 0.27333	lyap: 0.00000	gnorm: 0.58333	alpha: 0.99367	vnorm: 0.00071	lacc: 74.333%	uacc: 60.000%
+[train][160] lloss: 0.96000	uloss: 0.24556	lyap: 0.00000	gnorm: 0.54556	alpha: 0.99311	vnorm: 0.00075	lacc: 76.222%	uacc: 62.000%
+[train][180] lloss: 0.90000	uloss: 0.21778	lyap: 0.00000	gnorm: 0.50778	alpha: 0.99256	vnorm: 0.00078	lacc: 78.111%	uacc: 64.000%
+[train][200] lloss: 0.84000	uloss: 0.19000	lyap: 0.00000	gnorm: 0.47000	alpha: 0.99200	vnorm: 0.00082	lacc: 80.000%	uacc: 66.000%
+>>>[train] lloss: 11.10000	uloss: 3.15000	lyap: 0.00000	gnorm: 6.40000	alpha: 9.94500	vnorm: 0.00655	lacc: 71.500%	uacc: 57.000%
+------ Testing epochs: 1 ------
+[test][0  ] lacc: 69.000%	l2acc: 72.000%
+[test][20 ] lacc: 70.750%	l2acc: 73.750%
+[test][40 ] lacc: 72.500%	l2acc: 75.500%
+[test][60 ] lacc: 74.250%	l2acc: 77.250%
+[test][80 ] lacc: 76.000%	l2acc: 79.000%
+>>>[test] lacc: 72.500%	l2acc: 75.500%
+------ Training epochs: 2 ------
+[train][20 ] lloss: 1.12000	uloss: 0.38000	lyap: 0.00000	gnorm: 0.74000	alpha: 0.99620	vnorm: 0.00051	lacc: 67.000%	uacc: 52.000%
+[train][40 ] lloss: 1.08222	uloss: 0.35556	lyap: 0.00000	gnorm: 0.70444	alpha: 0.99568	vnorm: 0.00055	lacc: 68.778%	uacc: 53.889%
+[train][60 ] lloss: 1.04444	uloss: 0.33111	lyap: 0.00000	gnorm: 0.66889	alpha: 0.99516	vnorm: 0.00059	lacc: 70.556%	uacc: 55.778%
+[train][80 ] lloss: 1.00667	uloss: 0.30667	lyap: 0.00000	gnorm: 0.63333	alpha: 0.99463	vnorm: 0.00063	lacc: 72.333%	uacc: 57.667%
+[train][100] lloss: 0.96889	uloss: 0.28222	lyap: 0.00000	gnorm: 0.59778	alpha: 0.99411	vnorm: 0.00067	lacc: 74.111%	uacc: 59.556%
+[train][120] lloss: 0.93111	uloss: 0.25778	lyap: 0.00000	gnorm: 0.56222	alpha: 0.99359	vnorm: 0.00070	lacc: 75.889%	uacc: 61.444%
+[train][140] lloss: 0.89333	uloss: 0.23333	lyap: 0.00000	gnorm: 0.52667	alpha: 0.99307	vnorm: 0.00074	lacc: 77.667%	uacc: 63.333%
+[train][160] lloss: 0.85556	uloss: 0.20889	lyap: 0.00000	gnorm: 0.49111	alpha: 0.99254	vnorm: 0.00078	lacc: 79.444%	uacc: 65.222%
+[train][180] lloss: 0.81778	uloss: 0.18444	lyap: 0.00000	gnorm: 0.45556	alpha: 0.99202	vnorm: 0.00082	lacc: 81.222%	uacc: 67.111%
+[train][200] lloss: 0.78000	uloss: 0.16000	lyap: 0.00000	gnorm: 0.42000	alpha: 0.99150	vnorm: 0.00086	lacc: 83.000%	uacc: 69.000%
+>>>[train] lloss: 9.50000	uloss: 2.70000	lyap: 0.00000	gnorm: 5.80000	alpha: 9.93850	vnorm: 0.00685	lacc: 75.000%	uacc: 60.500%
+------ Testing epochs: 2 ------
+[test][0  ] lacc: 72.000%	l2acc: 75.000%
+[test][20 ] lacc: 74.000%	l2acc: 76.750%
+[test][40 ] lacc: 76.000%	l2acc: 78.500%
+[test][60 ] lacc: 78.000%	l2acc: 80.250%
+[test][80 ] lacc: 80.000%	l2acc: 82.000%
+>>>[test] lacc: 76.000%	l2acc: 78.500%
+------ Training epochs: 3 ------
+[train][20 ] lloss: 1.08000	uloss: 0.37000	lyap: 0.00000	gnorm: 0.76000	alpha: 0.99600	vnorm: 0.00050	lacc: 66.000%	uacc: 51.000%
+[train][40 ] lloss: 1.05111	uloss: 0.34889	lyap: 0.00000	gnorm: 0.72556	alpha: 0.99544	vnorm: 0.00054	lacc: 67.778%	uacc: 52.889%
+[train][60 ] lloss: 1.02222	uloss: 0.32778	lyap: 0.00000	gnorm: 0.69111	alpha: 0.99489	vnorm: 0.00058	lacc: 69.556%	uacc: 54.778%
+[train][80 ] lloss: 0.99333	uloss: 0.30667	lyap: 0.00000	gnorm: 0.65667	alpha: 0.99433	vnorm: 0.00062	lacc: 71.333%	uacc: 56.667%
+[train][100] lloss: 0.96444	uloss: 0.28556	lyap: 0.00000	gnorm: 0.62222	alpha: 0.99378	vnorm: 0.00066	lacc: 73.111%	uacc: 58.556%
+[train][120] lloss: 0.93556	uloss: 0.26444	lyap: 0.00000	gnorm: 0.58778	alpha: 0.99322	vnorm: 0.00069	lacc: 74.889%	uacc: 60.444%
+[train][140] lloss: 0.90667	uloss: 0.24333	lyap: 0.00000	gnorm: 0.55333	alpha: 0.99267	vnorm: 0.00073	lacc: 76.667%	uacc: 62.333%
+[train][160] lloss: 0.87778	uloss: 0.22222	lyap: 0.00000	gnorm: 0.51889	alpha: 0.99211	vnorm: 0.00077	lacc: 78.444%	uacc: 64.222%
+[train][180] lloss: 0.84889	uloss: 0.20111	lyap: 0.00000	gnorm: 0.48444	alpha: 0.99156	vnorm: 0.00081	lacc: 80.222%	uacc: 66.111%
+[train][200] lloss: 0.82000	uloss: 0.18000	lyap: 0.00000	gnorm: 0.45000	alpha: 0.99100	vnorm: 0.00085	lacc: 82.000%	uacc: 68.000%
+>>>[train] lloss: 9.50000	uloss: 2.75000	lyap: 0.00000	gnorm: 6.05000	alpha: 9.93500	vnorm: 0.00675	lacc: 74.000%	uacc: 59.500%
+------ Testing epochs: 3 ------
+[test][0  ] lacc: 71.000%	l2acc: 74.000%
+[test][20 ] lacc: 72.750%	l2acc: 75.750%
+[test][40 ] lacc: 74.500%	l2acc: 77.500%
+[test][60 ] lacc: 76.250%	l2acc: 79.250%
+[test][80 ] lacc: 78.000%	l2acc: 81.000%
+>>>[test] lacc: 74.500%	l2acc: 77.500%
+>>>[best] lacc: 76.000%	l2acc: 78.500%
