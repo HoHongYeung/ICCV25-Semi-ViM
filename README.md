@@ -99,7 +99,7 @@ pip install -r requirements.txt
 ---
 
 
-🧮 Citation
+## 🧮 Citation
 If you find this work useful, please cite:
 
 @article{he2025semi,
@@ -109,7 +109,7 @@ If you find this work useful, please cite:
   publisher={IEEE}
 }
 
-🤝 Acknowledgements
+## 🤝 Acknowledgements
 
 This research is a collaboration between
 University of Warwick, Columbia University, and Tricks-of-Semi-supervisedDeepLeanring-Pytorch .
