@@ -56,9 +56,9 @@ This hybrid fusion enhances generalization and reduces pseudo-label bias.
 ## 🌗 Dual-Mode Visualization (Light / Dark)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/framework_dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/framework_light.png">
-  <img alt="Semi-ViM Framework Overview" src="assets/framework_light.png" width="85%">
+  <source media="(prefers-color-scheme: dark)" srcset="Semi-ViM.jpg">
+  <source media="(prefers-color-scheme: light)" srcset="Semi-ViM.jpg">
+  <img alt="Semi-ViM Framework Overview" src="Semi-ViM.jpg" width="85%">
 </picture>
 
 ---
@@ -96,6 +96,7 @@ conda create -n semivim python=3.10 -y
 conda activate semivim
 pip install -r requirements.txt
 
+---
 
 
 🧮 Citation
