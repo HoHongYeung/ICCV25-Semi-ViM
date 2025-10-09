@@ -87,9 +87,10 @@ This hybrid fusion enhances generalization and reduces pseudo-label bias.
 ---
 
 
+
 ## ⚙️ Installation
 
-
+```bash
 git clone https://github.com/HoHongYeung/ICCV25-Semi-ViM.git
 cd ICCV25-Semi-ViM
 conda create -n semivim python=3.10 -y
@@ -100,6 +101,7 @@ pip install -r requirements.txt
 
 
 ## 🧮 Citation
+
 If you find this work useful, please cite:
 
 @article{he2025semi,
@@ -109,7 +111,7 @@ If you find this work useful, please cite:
   publisher={IEEE}
 }
 
----
+
 ## 🤝 Acknowledgements
 
 This research is a collaboration between
